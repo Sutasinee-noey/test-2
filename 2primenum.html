@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./2.css"/>
+    <title>Prime Number</title>
+</head>
+<body>
+    <script>
+        const num = parseInt(prompt("Please Input Number: "));
+        let prime = true;
+    if (num > 2){
+        for(let i = 2;i<num;i++){
+            if (num % i == 0 ){
+            prime = false;
+            break;
+        }
+    }
+      if (prime){
+        document.write(`${num}  prime number`);
+    } else {
+        document.write(`${num}  not prime number`);
+    }
+ }else{
+    document.write("The number is not prime number");
+ }
+    </script>
+</body>
+</html>
